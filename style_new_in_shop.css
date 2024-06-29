@@ -1,0 +1,328 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Added */
+}
+
+/* navbar top */
+.navbar-top {
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px; /* Added */
+    background-color: transparent; /* Added */
+    border-bottom: 1px solid #ddd; /* Added */
+}
+
+.social-link i img, .icons i img {
+    margin-left: 10px;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+.social-link i img:hover, .icons i img:hover {
+    background-color: transparent; /* Modified */
+}
+@media screen and (max-width: 420px) {
+    .social-link i img, .icons i img {
+        width: 20px;
+    }
+}
+
+.logo h2 {
+    font-family: monospace;
+    font-weight: bold;
+    color: black;
+}
+@media screen and (max-width: 420px) {
+    .logo h2 { /* Modified from .logo h3 */
+        font-size: 20px;
+    }
+}
+
+.user-icons, .other-icons {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+/* Added search-wrapper */
+.search-wrapper {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: .25rem;
+    width: 80%;
+    max-width: 600px;
+}
+/* navbar top */
+
+/* main content */
+.main-content-f {
+    width: 100%;
+    height: 90vh;
+    background-size: cover;
+    background-position: 70%;
+}
+
+/* navbar */
+#navbar-color {
+    background-color: #94837a;
+    border-radius: 0; /* Modified */
+}
+
+.navbar-nav {
+    margin: auto;
+}
+.nav-link {
+    margin-left: 30px;
+    font-weight: bold;
+    color: rgb(19, 17, 17);
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+.nav-link:hover {
+    color: rgb(81, 91, 86);
+}
+/* navbar */
+
+/* content */
+.content {
+    margin-top: 150px;
+    margin-left: 60px;
+}
+.content h1 {
+    font-size: 50px;
+}
+#btn1 button {
+    width: 150px;
+    height: 32px;
+    background: transparent;
+    border: 1px solid black;
+    letter-spacing: 3px;
+    font-weight: bold;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+#btn1 button:hover {
+    background-color: rgb(87, 93, 87);
+}
+@media screen and (max-width: 420px) {
+    .content h1 {
+        font-size: 30px;
+    }
+}
+/* content */
+
+/* Slideshow container */
+.container {
+    position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+}
+
+
+/* Next & previous buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+    text-align: center;
+    background-color: #222;
+    padding: 2px 16px;
+    color: white;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Six columns side by side */
+.column {
+    float: left;
+    width: 16.66%;
+}
+
+.active, .demo:hover {
+    opacity: 1;
+}
+
+/* card styles */
+.card {
+    border: none; /* Added */
+    border-radius: 10px; /* Added */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Added */
+    transition: transform 0.3s ease; /* Added */
+}
+.card:hover {
+    transform: translateY(-5px); /* Added */
+}
+.card-img-top {
+    border-radius: 10px 10px 0 0; /* Added */
+    height: auto; /* Modified */
+    max-width: 100%; /* Added */
+    object-fit: contain; /* Added */
+}
+.card-body {
+    text-align: center; /* Added */
+}
+
+/* Button styles */
+#btn2 button, #btn3 button, .btn4 button { /* Modified */
+    width: 150px;
+    height: 30px;
+    background: transparent;
+    border: 1px solid black;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+#btn2 button:hover, #btn3 button:hover, .btn4 button:hover { /* Modified */
+    background-color: rgba(238, 224, 208);
+}
+@media screen and (max-width: 895px) {
+    #btn3 button {
+        width: 100px;
+    }
+}
+
+/* card2 */
+#tpc {
+    box-shadow: 0 0 5px black;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+#tpc:hover {
+    transform: translateY(-10px);
+}
+/* card2 */
+
+/* card3 */
+#c p {
+    font-weight: bold;
+}
+#btn3 {
+    text-align: center;
+}
+/* card3 */
+
+/* footer */
+.footer {
+    width: 100%;
+    background-color: black;
+    margin-top: 100px;
+    padding: 20px 0; /* Added */
+    color: white; /* Added */
+    text-align: center; /* Added */
+}
+.title {
+    font-weight: bold;
+}
+.footer p, .footer h5 { /* Modified */
+    margin: 5px 0;
+}
+.icons i {
+    color: rgba(238, 224, 208);
+    font-size: 30px;
+    cursor: pointer;
+}
+.copyright, .credite {
+    margin-top: 20px;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .navbar-top .logo h2 {
+        font-size: 1.5em; /* Added */
+    }
+    .icons img {
+        width: 30px; /* Added */
+    }
+    .col-md-4 {
+        flex: 0 0 100%; /* Added */
+        max-width: 100%; /* Added */
+    }
+}
+
+@media (max-width: 576px) {
+    .navbar-top .logo h2 {
+        font-size: 1.2em; /* Added */
+    }
+    .icons img {
+        width: 25px; /* Added */
+    }
+    #btn1 button {
+        padding: 8px 16px; /* Added */
+    }
+}
+.search-wrapper {
+    position: relative;
+    width: 100%;
+    margin-bottom: 20px; 
+}
+
+#searchResults {
+    display: none; 
+    position: absolute;
+    top: 100%; 
+    left: 0;
+    width: 100%;
+    background-color: white;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1000; 
+}
+
+.search-result {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.search-result:hover {
+    background-color: #f0f0f0;
+}
+
+.search-result-image {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    margin-right: 10px;
+}
+
+.search-result-details {
+    flex: 1;
+}

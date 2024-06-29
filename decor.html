@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decor - Cozy Home</title>
+    <link rel="stylesheet" href="style-best.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <script src="search.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <div class="navbar-top">
+            <div class="logo">
+                <a href="index.html"><h2>Cozy Home</h2></a>
+            </div>
+            <div class="search-wrapper">
+                <input type="text" id="searchInput" placeholder="Search...">
+                <button class="btn search-btn"><i class="bx bx-search"></i></button>
+                <div id="searchResults" class="search-results"></div>
+            </div>
+            <div class="icons">
+                <a href="Wishlist.html"><img src="./image/heart.png" alt="Favorites" width="40px"></a>
+                <a href="cart.html"><img src="./image/shopping-cart.png" alt="Cart" width="40px"></a>
+                <a href="signin-signup.html"><img src="./image/login.png" alt="Login" width="40px"></a>
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <div class="main-content">
+            <nav class="navbar navbar-expand-md" id="navbar-color">
+               <div class="container">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                  <ul class="navbar-nav">
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownCatalog" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Catalog
+                      </a>
+                      <div class="dropdown-menu" aria-labelledby="navbarDropdownCatalog">
+                        <a class="dropdown-item" href="chair.html">Chair</a>
+                        <a class="dropdown-item" href="sofa.html">Sofa</a>
+                        <a class="dropdown-item" href="table.html">Table</a>
+                        <a class="dropdown-item" href="tv_stand.html">TV Stand</a>
+                        <a class="dropdown-item" href="storage.html">Storage</a>
+                        <a class="dropdown-item" href="coffee_table.html">Coffee Table</a>
+                        <a class="dropdown-item" href="booshelf.html">Bookshelf</a>
+                        <a class="dropdown-item" href="rug.html">Rug</a>
+                        <a class="dropdown-item" href="decor.html">Decor</a>
+                      </div>
+                    </li>
+                    <li class="nav-item">
+                        
+                        <a class="nav-link" href="Room-inspiration.html">Room Inspiration</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="new-in-shop.html" id="navbarDropdownNewInShop" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        New in Shop
+                      </a>
+                      <div class="dropdown-menu" aria-labelledby="navbarDropdownNewInShop">
+                        <a class="dropdown-item" href="new-in-shop.html">View All</a>
+                        <a class="dropdown-item" href="new-collection.html">Latest Collections</a>
+                        <a class="dropdown-item" href="new-items.html">New Items</a>
+                      </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownBestSeller" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Cozy's Bests
+                      </a>
+                      <div class="dropdown-menu" aria-labelledby="navbarDropdownBestSeller">
+                        <a class="dropdown-item" href="Customer_fav.html">Customer Favorites</a>
+                        <a class="dropdown-item" href="Cozy_Deals.html">Best Deals</a>
+                      </div>
+                    </li>
+                   
+                    
+                  </ul>
+                </div>
+               </div> 
+              </nav>
+          
+    </div>
+
+    <!-- main content -->
+
+    <!-- New Collections Section -->
+    <div class="container" style="margin-bottom: 30px;">
+        <h3 class="text-center" style="padding-top: 30px;">DECOR</h3>
+        <div class="row" style="margin-top: 50px;">
+            <div class="col-md-3 py-3 py-md-0">
+                <div class="card">
+                    <img src="image_room/livingroom1-1_bild.png" alt="Item 1" class="card-img-top" height="200px">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Image "A moment with mom"</h5>
+                        <p class="text-center">€40.00</p>
+                        <div id="btn1">
+                            <a href="lr1-decopicmama.html"><button>Shop Now</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 py-3 py-md-0">
+                <div class="card">
+                    <img src="image_room/livingroom1-2_deco.png" alt="Item 4" class="card-img-top" height="200px">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Reed grass handmade wall decoration</h5>
+                        <p class="text-center">€150.00</p>
+                        <div id="btn1">
+                            <a href="lr1-walldeco150.html"><button>Shop Now</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Additional items -->
+            <div class="col-md-3 py-3 py-md-0">
+                <div class="card">
+                    <img src="image_room/livingroom2-1_curtains.png" alt="Item 1" class="card-img-top" height="200px">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Ivory curtains</h5>
+                        <p class="text-center">€110.00</p>
+                        <div id="btn1">
+                            <a href="lr2-2courtains.html"><button>Shop Now</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 py-3 py-md-0">
+                <div class="card">
+                    <img src="image_room/livingroom2-2_worklight.png" alt="Item 4" class="card-img-top" height="200px">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Work light, black</h5>
+                        <p class="text-center">€70.00</p>
+                        <div id="btn1">
+                            <a href="lr2-worklight.html"><button>Shop Now</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 py-3 py-md-0">
+                <div class="card">
+                    <img src="image_room/livingroom3_lamp.png" alt="Item 2" class="card-img-top" height="200px">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Floor lamp, ash/white</h5>
+                        <p class="text-center">€90.00</p>
+                        <div id="btn1">
+                            <a href="lr3-floorlampash.html"><button>Shop Now</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 py-3 py-md-0">
+                <div class="card">
+                    <img src="image_room/livingroom3-2_pillowcase.png" alt="Item 3" class="card-img-top" height="200px">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Cushion cover, grey-green</h5>
+                        <p class="text-center">€10.00</p>
+                        <div id="btn1">
+                            <a href="lr3-cushioncovergreygreen.html"><button>Shop Now</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 py-3 py-md-0">
+                <div class="card">
+                    <img src="image_room/livingroom4_curtain_panel.png" alt="Item 1" class="card-img-top" height="200px">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Curtain, 1 panel, light yellow/grey turquoise</h5>
+                        <p class="text-center">€160.00</p>
+                        <div id="btn1">
+                            <a href="lr4-Curtainlight.html"><button>Shop Now</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 py-3 py-md-0">
+                <div class="card">
+                    <img src="image_room/livingroom4_light.png" alt="Item 3" class="card-img-top" height="200px">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">LED pendant light, white frosted glass</h5>
+                        <p class="text-center">€140.00</p>
+                        <div id="btn1">
+                            <a href="lr4-ledpendantlight.html"><button>Shop Now</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 py-3 py-md-0">
+                <div class="card">
+                    <img src="image_room/livingroom4-2_image.png" alt="Item 4" class="card-img-top" height="200px">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Acoustic panel, sound-absorbing</h5>
+                        <p class="text-center">€70.00</p>
+                        <div id="btn1">
+                            <a href="lr4-acusticpanel.html"><button>Shop Now</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 py-3 py-md-0">
+                <div class="card">
+                    <img src="image_room/livingroom5_lamp.png" alt="Item 2" class="card-img-top" height="200px">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Table lamp, beige/opal white glass</h5>
+                        <p class="text-center">€70.00</p>
+                        <div id="btn1">
+                            <a href="lr5-whiteglasstablelamp.html"><button>Shop Now</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 py-3 py-md-0">
+                <div class="card">
+                    <img src="image_room/livingroom5-1_frame.png" alt="Item 2" class="card-img-top" height="200px">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Black Frame</h5>
+                        <p class="text-center">€10.00</p>
+                        <div id="btn1">
+                            <a href="lr5-blackframe.html"><button>Shop Now</button></div></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 py-3 py-md-0">
+                <div class="card">
+                    <img src="image_room/livingroom5-2_curtain.png" alt="Item 3" class="card-img-top" height="200px">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">2 curtain panels, dark beige</h5>
+                        <p class="text-center">€200.00</p>
+                        <div id="btn1">
+                            <a href="lr5-2courtainbeige.html"><button>Shop Now</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 py-3 py-md-0">
+                <div class="card">
+                    <img src="image_room/livingroom6_tablelamp.png" alt="Item 4" class="card-img-top" height="200px">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Table lamp, smoke-colored glass</h5>
+                        <p class="text-center">€70.00</p>
+                        <div id="btn1">
+                            <a href="lr6-lampsmokecolor.html"><button>Shop Now</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 py-3 py-md-0">
+                <div class="card">
+                    <img src="image_room/livingroom6-1_bar.png" alt="Item 1" class="card-img-top" height="200px">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Bar with 6 buttons, oak</h5>
+                        <p class="text-center">€50.00</p>
+                        <div id="btn1">
+                            <a href="lr6-hanger6buttons.html"><button>Shop Now</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 py-3 py-md-0">
+                <div class="card">
+                    <img src="image_room/livingroom6-2_basket.png" alt="Item 3" class="card-img-top" height="200px">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Handmade Rattan Basket</h5>
+                        <p class="text-center">€20.00</p>
+                        <div id="btn1">
+                            <a href="lr6-handmadebasket.html"><button>Shop Now</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 py-3 py-md-0">
+                <div class="card">
+                    <img src="image_deals/light.png" alt="Sale Item 3" class="card-img-top" height="200px">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Cabinet<br>Light</h5>
+                        <div class="price-row">
+                            <p class="new-low-price text-center">New low price</p>
+                            <p class="old-price">€30.00</p>
+                            <p class="new-price">€20.00</p>
+                        </div>
+                        <div id="btn1">
+                            <a href="bd_Cabinet_Light.html"><button>Shop Now</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 py-3 py-md-0">
+                <div class="card">
+                    <img src="image_deals/basket.jpg" alt="Sale Item 6" class="card-img-top" height="200px">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Storage<br>Basket</h5>
+                        <div class="price-row">
+                            <p class="new-low-price text-center">New low price</p>
+                            <p class="old-price">€12.00</p>
+                            <p class="new-price">€7.99</p>
+                        </div>
+                        <div id="btn1">
+                            <a href="bd_Storage_Basket.html"><button>Shop Now</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 py-3 py-md-0">
+                <div class="card">
+                    <img src="image_deals/SilverCurtains.jpg" alt="Sale Item 7" class="card-img-top" height="200px">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Silver<br> Curtains</h5>
+                        <div class="price-row">
+                            <p class="new-low-price text-center">New low price</p>
+                            <p class="old-price">€80.00</p>
+                            <p class="new-price">€40.00</p>
+                        </div>
+                        <div id="btn1">
+                            <a href="bd_Silver_Curtains.html"><button>Shop Now</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 py-3 py-md-0">
+                <div class="card">
+                    <img src="image_deals/pillowcase.jpg" alt="Sale Item 8" class="card-img-top" height="200px">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Colorful Pillowcase</h5>
+                        <div class="price-row">
+                            <p class="new-low-price text-center">New low price</p>
+                            <p class="old-price">€10.00</p>
+                            <p class="new-price">€7.99</p>
+                        </div>
+                        <div id="btn1">
+                            <a href="bd_Colorful_Pillow_Case.html"><button>Shop Now</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 py-3 py-md-0">
+                <div class="card">
+                    <div class="bestseller-badge">Bestseller</div>
+                    <img src="img_fav/Wallboard.jpg" alt="Item 10" class="card-img-top" height="200px">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Oak Artisan Wallboard, black</h5>
+                        <p class="text-center">€79.00</p>
+                        <div id="btn1">
+                            <a href="Cf_ModernWallBoard.html"><button>Shop Now</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 py-3 py-md-0">
+                <div class="card">
+                    <img src="Images_new_items/4.png" alt="New Item 4" class="card-img-top" height="200px">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Modern Desk Lamp</h5>
+                        <p class="text-center">€120.00</p>
+                        <div id="btn1">
+                                <a href="NI_Modern_Desk_Lamp.html"><button>Shop Now</button></a>
+                            </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 py-3 py-md-0">
+                <div class="card">
+                    <img src="Images_new_items/6.png" alt="New Item 6" class="card-img-top" height="200px">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Modern Floor Lamp</h5>
+                        <p class="text-center">€150.00</p>
+                        <div id="btn1">
+                                <a href="NI_Modern_Floor_Lamp.html"><button>Shop Now</button></a>
+                            </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 py-3 py-md-0">
+                <div class="card">
+                    <img src="Images_new_items/13.png" alt="New Item 13" class="card-img-top" height="200px">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Long Mirror</h5>
+                        <p class="text-center">€100.00</p>
+                        <div id="btn1">
+                                <a href="NI_Long_Mirror.html"><button>Shop Now</button></a>
+                            </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 py-3 py-md-0">
+                <div class="card">
+                    <img src="Images_new_items/16.png" alt="New Item 16" class="card-img-top" height="200px">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Shelf Set</h5>
+                        <p class="text-center">€80.00</p>
+                        <div id="btn1">
+                                <a href="NI_Shelf_Set.html"><button>Shop Now</button></a>
+                            </div>
+                    </div>
+                </div>
+        </div>
+        <div class="col-md-3 py-3 py-md-0">
+            <div class="card">
+                <img src="images_latest_collection/4.png" alt="New Collection 4" class="card-img-top" height="200px">
+                <div class="card-body">
+                    <h5 class="card-title text-center">Loft Deco Vase</h5>
+                    <p class="text-center">$70.00</p>
+                    <div id="btn1">
+                            <a href="loft_deco_vase.html"><button>Shop Now</button></a>
+                        </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 py-3 py-md-0">
+            <div class="card">
+                <img src="images_latest_collection/5.png" alt="New Collection 6" class="card-img-top" height="200px">
+                <div class="card-body">
+                    <h5 class="card-title text-center">Loft Deco Vase</h5>
+                    <p class="text-center">€50.00</p>
+                    <div id="btn1">
+                            <a href="loft_modern_vase.html"><button>Shop Now</button></a>
+                        </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 py-3 py-md-0">
+            <div class="card">
+                <img src="images_latest_collection/15.png" alt="New Collection 6" class="card-img-top" height="200px">
+                <div class="card-body">
+                    <h5 class="card-title text-center">Loft Big Mirror</h5>
+                    <p class="text-center">€300.00</p>
+                    <div id="btn1">
+                            <a href="loft_big_mirror.htmlx"><button>Shop Now</button></a>
+                        </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 py-3 py-md-0">
+            <div class="card">
+                <img src="images_latest_collection/16.png" alt="New Collection 6" class="card-img-top" height="200px">
+                <div class="card-body">
+                    <h5 class="card-title text-center">Loft Round Mirror</h5>
+                    <p class="text-center">€80.00</p>
+                    <div id="btn1">
+                            <a href="loft_round_mirror.html"><button>Shop Now</button></a>
+                        </div>
+                </div>
+            </div>
+        </div>
+
+        </div>    
+    </div>
+    <footer class="footer mt-auto py-4" style="background-color: #333; color: #fff;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5 class="title" style="color: #ffcc00;">Contact</h5>
+                    <p>Furtwangen, Germany</p>
+                    <p>+49 97 123 456</p>
+                    <p>info@cozyhome.com</p>
+                    <div class="social-media mt-3">
+                        <a href="https://www.instagram.com" style="color: #fff; margin-right: 10px;"><i class='bx bxl-instagram'></i></a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <h5 class="title" style="color: #ffcc00;">Support</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="support.html" style="color: #fff;">Privacy & Policy</a></li>
+                        <li><a href="support.html" style="color: #fff;">Terms & Conditions</a></li>
+                        <li><a href="support.html" style="color: #fff;">FAQs</a></li>
+                        <li><a href="support.html" style="color: #fff;">Return Policy</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5 class="title" style="color: #ffcc00;">About us</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="services.html" style="color: #fff;">Sustainable Materials</a></li>
+                        <li><a href="services.html" style="color: #fff;">Fast Delivery</a></li>
+                        <li><a href="services.html" style="color: #fff;">Customer Support</a></li>
+                        <li><a href="signin-signup.html" style="color: #fff;">Account</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-md-6">
+                    <h5 class="title" style="color: #ffcc00;">Newsletter</h5>
+                    <p>Sign up for exclusive offers and updates</p>
+                    <form>
+                        <div class="input-group">
+                            <input type="email" class="form-control" placeholder="Your email address" aria-label="Email Address">
+                            <div class="input-group-append">
+                                <button class="btn btn-primary" type="button">Subscribe</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-md-6">
+                    <h5 class="title" style="color: #ffcc00;">Follow Us</h5>
+                    <p>Stay connected through social media!</p>
+                    <div class="social-media">
+                        <a href="https://www.instagram.com" style="color: #fff; margin-right: 10px;"><i class='bx bxl-instagram bx-lg'></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col text-center">
+                    <p>&copy; 2024 Cozy Home. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
